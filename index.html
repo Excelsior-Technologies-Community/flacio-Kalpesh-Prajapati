@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="card-section.css">
+  <link rel="stylesheet" href="policy-section.css">
+  <title>Flacio</title>
+</head>
+
+<body>
+  <nav class="navbar    navbar-expand-lg navbar-light bg-transparent position-absolute w-100 py-3">
+    <div class="container position-relative">
+
+      <!-- LEFT MENU -->
+      <div class="collapse navbar-collapse justify-content-start">
+        <ul class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link text-dark" href="#">HOME</a></li>
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              SHOP
+            </a>
+
+            <div class="dropdown-menu mega-menu border-0 shadow mt-3 p-4">
+              <div class="row">
+
+                <!-- LEFT: IMAGES -->
+                <div class="col-md-5">
+                  <div class="row g-3">
+                    <div class="col-6 text-center">
+                      <img src="img/new.jpg" class="img-fluid rounded">
+                      <p class="mt-2 small">NEW ARRIVALS</p>
+                    </div>
+                    <div class="col-6 text-center">
+                      <img src="img/best.jpg" class="img-fluid rounded">
+                      <p class="mt-2 small">BEST SELLERS</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- RIGHT: LINKS -->
+                <div class="col-md-7">
+                  <div class="row">
+
+                    <div class="col-md-4">
+                      <h6 class="mb-2">Layout</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Shop Grid</a></li>
+                        <li><a href="#">Shop List</a></li>
+                        <li><a href="#">Left Sidebar</a></li>
+                        <li><a href="#">Right Sidebar</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h6 class="mb-2">Filter</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Dropdown</a></li>
+                        <li><a href="#">Sidebar</a></li>
+                        <li><a href="#">Drawer</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                      <h6 class="mb-2">Cart</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Checkout</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PRODUCT
+            </a>
+            <ul class="dropdown-menu border-0 shadow mt-3">
+              <li><a class="dropdown-item" href="#">Product Details</a></li>
+              <li><a class="dropdown-item" href="#">Product Variants</a></li>
+              <li><a class="dropdown-item" href="#">Product Reviews</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              BLOG
+            </a>
+            <ul class="dropdown-menu border-0 shadow mt-3">
+              <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="#">Blog List</a></li>
+              <li><a class="dropdown-item" href="#">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              FEATURED
+            </a>
+            <ul class="dropdown-menu border-0 shadow mt-3">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CENTER LOGO -->
+      <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
+        <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/logo.png" alt="Flacio" height="28">
+      </a>
+
+      <!-- RIGHT ICONS -->
+      <div class="collapse navbar-collapse justify-content-end">
+        <div class="d-flex gap-3 text-dark">
+          <a href="#" class="text-dark text-decoration-none"><i class="bi bi-search"></i></a>
+          <a href="#" class="text-dark text-decoration-none"><i class="bi bi-person"></i></a>
+          <a href="#" class="text-dark text-decoration-none position-relative">
+            <i class="bi bi-heart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+              style="font-size: 9px;">0</span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none position-relative">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+              style="font-size: 9px;">0</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- TOGGLER (MOBILE) -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+
+
+
+  <section class="hero-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active"
+          style="background-image: url('https://wpbingo-flacio.myshopify.com/cdn/shop/files/slider-1-1.jpg?v=1727765932');">
+          <div class="carousel-overlay d-flex align-items-center text-center">
+            <div class="container text-white">
+
+              <p class="hero-subtitle">SALE UP TO 30% OFF</p>
+              <h1 class="hero-title">Plants <span>made easy</span></h1>
+              <p class="hero-desc">
+                Patch helps you discover the best plants for your space.
+              </p>
+
+              <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="#" class="shop-btn">Shop Indoor</a>
+                <a href="#" class="shop-btn">Shop Outdoor</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item"
+          style="background-image: url('https://wpbingo-flacio.myshopify.com/cdn/shop/files/slider-1-3_87c2a061-1b63-41f1-9ab1-9762598d377a_1296x.jpg?v=1727765984');">
+          <div class="carousel-overlay d-flex align-items-center text-center">
+            <div class="container text-white">
+
+              <p class="hero-subtitle">SALE UP TO 30% OFF</p>
+              <h1 class="hero-title">Gift <span>We love</span></h1>
+              <p class="hero-desc">
+                Patch helps you discover the best plants for your space, delivers them to your door and helps you look
+                after them.
+              </p>
+
+              <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="#" class="shop-btn">Shop Indoor</a>
+                <a href="#" class="shop-btn">Shop Outdoor</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-item"
+          style="background-image: url('https://wpbingo-flacio.myshopify.com/cdn/shop/files/slider-1-2.jpg?v=1727765932');">
+          <div class="carousel-overlay d-flex align-items-center text-center">
+            <div class="container text-white">
+
+              <p class="hero-subtitle">SALE UP TO 30% OFF</p>
+              <h1 class="hero-title">Make <span>People marry</span></h1>
+              <p class="hero-desc">
+                Patch helps you discover the best plants for your space, delivers them to your door and helps you look
+                after them.
+              </p>
+
+              <div class="d-flex justify-content-center gap-3 mt-4">
+                <a href="#" class="shop-btn">Shop Indoor</a>
+                <a href="#" class="shop-btn">Shop Outdoor</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CONTROLS -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </section>
+
+  <section class="card-overlap-section">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="custom-card">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/banner-1_540x.jpg?v=1727768126" alt="">
+            <div class="card-overlay">
+              <h5>Fast Delivery</h5>
+              <a class="shop-now" href="">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="custom-card">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/banner-2.jpg?v=1727768127" alt="">
+            <div class="card-overlay">
+              <h5>Premium Quality</h5>
+              <a class="shop-now" href="">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="custom-card">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/banner-3.jpg?v=1727768127" alt="">
+            <div class="card-overlay">
+              <h5>24/7 Support</h5>
+              <a class="shop-now" href="">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="plant-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+
+          <h1 class="plant-title">
+            Decorate your <br>
+            home <span>with plants</span>
+          </h1>
+
+          <p class="plant-desc">
+            Praesent egestas tristique nibh. Sed mollis, eros et ultrices tempus,
+            mauris ipsum aliquam libero, non adipiscing dolor urna a orci.
+          </p>
+
+          <!-- Feature Item -->
+          <div class="feature-box d-flex align-items-center">
+            <div class="icon-circle me-3 ">
+              <img class="fade-in ls-is-cached lazyloaded"
+                src="//wpbingo-flacio.myshopify.com/cdn/shop/files/policy-1.png?v=1727778215" width="79" height="79">
+            </div>
+            <div>
+              <h5>Unbeatable quality</h5>
+              <p>Greater productivity and relaxation</p>
+            </div>
+          </div>
+
+          <div class="feature-box d-flex align-items-center">
+            <div class="icon-circle me-3 ">
+              <img class="fade-in ls-is-cached lazyloaded"
+                src="//wpbingo-flacio.myshopify.com/cdn/shop/files/policy-2.png?v=1727778215" width="79" height="79">
+            </div>
+            <div>
+              <h5>Delivery to your door</h5>
+              <p>Better mental wellbeing and happiness</p>
+            </div>
+          </div>
+
+          <div class="feature-box d-flex align-items-center">
+            <div class="icon-circle me-3 ">
+              <img class="fade-in ls-is-cached lazyloaded"
+                src="//wpbingo-flacio.myshopify.com/cdn/shop/files/policy-3.png?v=1727778215" width="79" height="79">
+            </div>
+            <div>
+              <h5>Bring nature into your life</h5>
+              <p>Greater productivity and relaxation</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="right-img col-lg-6  ">
+          <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-image-1.webp?v=1727772240"
+            class="img-fluid plant-img" alt="Plant">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-image-2.png?v=1727772240"
+            class="overlay-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

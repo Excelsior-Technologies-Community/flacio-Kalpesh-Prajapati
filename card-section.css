@@ -1,0 +1,48 @@
+.card-overlap-section {
+  margin-top: -320px;   /* pull cards upward */
+  position: relative;
+  z-index: 10;
+}
+
+.custom-card {
+  position: relative;
+  border: none;
+  overflow: hidden;
+  height: 350px;
+}    
+
+.custom-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.custom-card img:hover{
+transform: scale(1.1);
+}
+/* Overlay Text */
+.card-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 2;
+}
+
+.card-overlay h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.card-overlay a {
+  font-size: 11px;
+  margin: 0;
+  color: black;
+}
+
+
+
+
+
