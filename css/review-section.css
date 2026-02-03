@@ -1,0 +1,79 @@
+.review-section {
+  background: url("https://wpbingo-flacio.myshopify.com/cdn/shop/files/bg-1.jpg?v=1727854965")
+              center / cover no-repeat;
+
+  padding: 22px 0;           /* SMALL HEIGHT */
+  user-select: none;
+  cursor: grab;
+}
+
+.review-section:active {
+  cursor: grabbing;
+}
+
+/* Horizontal draggable track */
+.review-track {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 24px;
+}
+
+/* Hide scrollbar */
+.review-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each review */
+.review-card {
+  min-width: 75%;
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+/* Stars */
+.review-stars {
+  color: #2f4f2f;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+}
+
+/* Quote */
+.review-text {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-style: italic;
+  max-width: 640px;
+  margin: 0 auto 10px;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* Avatar */
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 4px;
+  pointer-events: none;
+}
+
+/* Name */
+.review-name {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .review-card {
+    min-width: 55%;
+    max-width: 55%;
+  }
+}
