@@ -1,0 +1,200 @@
+    /* SECTION */
+    .office-section {
+        padding: 80px 0;
+        background: #ffffff;
+    }
+
+    /* MAIN GRID */
+    .office-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    /* IMAGE */
+    .office-image {
+        position: relative;
+    }
+
+    .office-image img {
+        height: 400px;
+        width: 600px;
+    }
+
+
+    .topleft {
+        position: absolute;
+        top: -12%;
+        left: 10%;
+        z-index: 99;
+    }
+
+    .topleft img {
+        width: 100px;
+        height: 100px;
+        animation: rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* CONTENT */
+    .office-content h2 {
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        color: #2b2b2b;
+    }
+
+    .office-content h2 em {
+        font-style: italic;
+    }
+
+    /* PARAGRAPH */
+    .office-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #6b6b6b;
+        max-width: 520px;
+        margin-bottom: 35px;
+    }
+
+    /* BUTTON */
+    .office-btn {
+        display: inline-block;
+        padding: 14px 32px;
+        background: #1f3d2b;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+
+        transition: background 0.3s ease;
+    }
+
+    .office-btn:hover {
+        background: #2b712b;
+
+    }
+
+
+    /* for all style  */
+
+    /* MAIN GRID */
+    .for-all-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    /* IMAGE */
+    .for-all-image {
+        position: relative;
+    }
+
+    .for-all-image img {
+        height: 400px;
+        width: 600px;
+    }
+
+    .topright {
+        position: absolute;
+        top: -12%;
+        right: 10%;
+        z-index: 99;
+    }
+
+    .topright img {
+        width: 100px;
+        height: 100px;
+        animation: rotate 5s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* CONTENT */
+    .for-all-content h2 {
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        color: #2b2b2b;
+    }
+
+    .for-all-content h2 em {
+        font-style: italic;
+    }
+
+    /* PARAGRAPH */
+    .for-all-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #6b6b6b;
+        max-width: 520px;
+        margin-bottom: 35px;
+    }
+
+    /* BUTTON */
+    .for-all-btn {
+        display: inline-block;
+        padding: 14px 32px;
+        background: #1f3d2b;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+
+        transition: background 0.3s ease;
+    }
+
+    .for-all-btn:hover {
+        background: #162d20;
+    }
+
+    /* Mobile: Stack columns on small screens */
+    @media (max-width: 768px) {
+
+        .office-container,
+        .for-all-container {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 40px;
+            padding: 40px 20px;
+        }
+
+        .office-image,
+        .for-all-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .office-image img,
+        .for-all-image img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+    }
