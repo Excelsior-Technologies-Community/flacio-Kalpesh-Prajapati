@@ -1,0 +1,149 @@
+.navbar {
+    z-index: 9999;
+}
+
+/* Container */
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Mega Dropdown - allow full width dropdown */
+.mega-dropdown {
+    position: static;
+}
+
+.mega-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+/* Link styling */
+.mega-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.mega-menu a:hover {
+    color: #000;
+}
+
+/* Image sizing */
+.mega-menu img {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Logo centering */
+.navbar-brand {
+    z-index: 10;
+}
+
+/* Icons */
+.navbar-icons {
+    z-index: 10;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+    
+    /* Mobile menu positioning */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin-top: 10px;
+    }
+    
+    /* Stack nav items vertically */
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+    
+    /* Full width dropdowns on mobile */
+    .dropdown-menu {
+        width: 100%;
+        position: static !important;
+        transform: none !important;
+        margin-top: 10px !important;
+    }
+    
+    /* Mega menu mobile adjustments */
+    .mega-menu {
+        position: static;
+    }
+    
+    .mega-menu .row {
+        flex-direction: column;
+    }
+    
+    /* Logo - center on mobile */
+    .navbar-brand {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        top: 50%;
+        margin-top: -14px;
+    }
+    
+    /* HIDE all icons on mobile */
+    .navbar-icons {
+        display: none !important;
+    }
+    
+    /* Toggler positioning */
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: auto;
+    }
+    
+    /* Reduce mega menu image size on mobile */
+    .mega-menu img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    /* Adjust logo size */
+    .navbar-brand img {
+        height: 24px;
+    }
+    
+    /* Smaller mega menu images */
+    .mega-menu img {
+        height: 80px;
+    }
+}
+
+/* Desktop specific - ensure proper layout */
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-right: auto;
+    }
+    
+    .navbar-icons {
+        margin-left: auto;
+    }
+}

@@ -42,3 +42,27 @@ transform: scale(1.2);
   margin: 0;
   color: black;
 }
+
+
+/* Overlay Text */
+.card-overlay1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transform: translate(70%, 0%);
+  color: #fff;
+  z-index: 2;
+}
+
+.card-overlay1 h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.card-overlay1 a {
+  font-size: 11px;
+  margin: 0;
+  color: black;
+}

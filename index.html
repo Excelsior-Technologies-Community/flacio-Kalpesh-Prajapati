@@ -20,6 +20,7 @@
 
   <!-- Custom CSS Files -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/hero-section.css">
   <link rel="stylesheet" href="css/card-section.css">
   <link rel="stylesheet" href="css/policy-section.css">
@@ -28,18 +29,19 @@
   <link rel="stylesheet" href="css/style-section.css">
   <link rel="stylesheet" href="css/news-letter.css">
   <link rel="stylesheet" href="css/image-slider.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <title>Flacio</title>
 
 </head>
 
 <body>
-  <nav class="navbar    navbar-expand-lg navbar-light bg-transparent position-absolute w-100 py-3">
-    <div class="container position-relative">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100 py-3">
+    <div class="container-fluid px-4">
 
-      <!-- LEFT MENU -->
-      <div class="collapse navbar-collapse justify-content-start">
-        <ul class="navbar-nav gap-4">
+      <!-- LEFT: Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav gap-4 me-auto">
           <li class="nav-item"><a class="nav-link text-dark" href="#">HOME</a></li>
           <li class="nav-item dropdown mega-dropdown">
             <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
@@ -49,7 +51,6 @@
 
             <div class="dropdown-menu mega-menu border-0 shadow mt-3 p-4">
               <div class="row">
-
                 <!-- LEFT: IMAGES -->
                 <div class="col-md-5">
                   <div class="row g-3">
@@ -69,7 +70,6 @@
                 <!-- RIGHT: LINKS -->
                 <div class="col-md-7">
                   <div class="row">
-
                     <div class="col-md-4">
                       <h6 class="mb-2">Layout</h6>
                       <ul class="list-unstyled">
@@ -97,10 +97,8 @@
                         <li><a href="#">Checkout</a></li>
                       </ul>
                     </div>
-
                   </div>
                 </div>
-
               </div>
             </div>
           </li>
@@ -116,6 +114,7 @@
               <li><a class="dropdown-item" href="#">Product Reviews</a></li>
             </ul>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -127,6 +126,7 @@
               <li><a class="dropdown-item" href="#">Blog Details</a></li>
             </ul>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -141,35 +141,31 @@
         </ul>
       </div>
 
-      <!-- CENTER LOGO -->
-      <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
+      <!-- CENTER: Logo -->
+      <a class="navbar-brand position-absolute start-50 translate-middle-x" href="#">
         <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/logo.png" alt="Flacio" height="28">
       </a>
 
-      <!-- RIGHT ICONS -->
-      <div class="collapse navbar-collapse justify-content-end">
-        <div class="d-flex gap-3 text-dark">
-          <a href="#" class="text-dark text-decoration-none"><i class="bi bi-search"></i></a>
-          <a href="#" class="text-dark text-decoration-none"><i class="bi bi-person"></i></a>
-          <a href="#" class="text-dark text-decoration-none position-relative">
-            <i class="bi bi-heart"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
-              style="font-size: 9px;">0</span>
-          </a>
-          <a href="#" class="text-dark text-decoration-none position-relative">
-            <i class="bi bi-bag"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
-              style="font-size: 9px;">0</span>
-          </a>
-        </div>
+      <!-- RIGHT: Icons -->
+      <div class="navbar-icons d-flex gap-3 text-dark ms-auto">
+        <a href="#" class="text-dark text-decoration-none"><i class="bi bi-search"></i></a>
+        <a href="#" class="text-dark text-decoration-none"><i class="bi bi-person"></i></a>
+        <a href="#" class="text-dark text-decoration-none position-relative">
+          <i class="bi bi-heart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+            style="font-size: 9px;">0</span>
+        </a>
+        <a href="#" class="text-dark text-decoration-none position-relative">
+          <i class="bi bi-bag"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+            style="font-size: 9px;">0</span>
+        </a>
       </div>
-    </div>
 
-    <!-- TOGGLER (MOBILE) -->
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-      <span class="navbar-toggler-icon"></span>
-
-    </button>
+      <!-- TOGGLER (MOBILE) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
     </div>
   </nav>
@@ -279,9 +275,9 @@
         <div class="col-md-3">
           <div class="custom-card">
             <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/banner-2.jpg?v=1727768127" alt="">
-            <div class="card-overlay">
+            <div class="card-overlay1">
               <h5>Gift Green</h5>
-              <a class="shop-now" href="">
+              <a class="shop-now " href="">
                 Shop Now
               </a>
             </div>
@@ -638,7 +634,8 @@
         <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/banner-4.jpg?v=1727860877" alt="Office plants">
 
         <div class="topleft">
-          <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/text-rotate.png?v=1727860890">
+          <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/text-rotate.png?v=1727860890"
+            class="hide-mobile" alt="Hidden on mobile">
         </div>
       </div>
 
@@ -682,7 +679,8 @@
         <img src="	https://wpbingo-flacio.myshopify.com/cdn/shop/files/banner-5.jpg?v=1727860876" alt="Office plants">
 
         <div class="topright">
-          <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/text-rotate.png?v=1727860890">
+          <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/text-rotate.png?v=1727860890"
+            class="hide-mobile" alt="Hidden on mobile">
         </div>
       </div>
     </div>
@@ -698,9 +696,7 @@
               <p>Stay up to date on the latest news with our carefully curated newsletters.</p>
               <div class="input-group">
                 <input type="email" class="form-control" placeholder="Enter your email">
-                <span class="input-group-btn">
-                  <button class="btn" type="submit">Submit</button>
-                </span>
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
             </form>
           </div>
@@ -775,102 +771,179 @@
     </div>
   </section>
 
-<section class="policy-section py-2 pt-0">
-  <div class="container py-4">
-  <div class="row gy-4 align-items-center">
+  <section class="policy-section py-2 pt-0">
+    <div class="container py-4">
+      <div class="row gy-4 align-items-center">
 
-    <!-- Item 1 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="d-flex align-items-center gap-3">
-        <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-4.png?v=1727923043" width="40">
-        <div>
-          <h6 class="mb-1">Free delivery</h6>
-          <small class="text-muted">For all orders above $45</small>
-        </div>
-      </div>
-    </div>
-
-    <!-- Item 2 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="d-flex align-items-center gap-3">
-        <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-5.png?v=1727923043" width="40">
-        <div>
-          <h6 class="mb-1">Secure payments</h6>
-          <small class="text-muted">Confidence on all devices</small>
-        </div>
-      </div>
-    </div>
-
-    <!-- Item 3 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="d-flex align-items-center gap-3">
-        <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-6.png?v=1727923044" width="40">
-        <div>
-          <h6 class="mb-1">Top-notch support</h6>
-          <small class="text-muted">sayhello@flacio.com</small>
-        </div>
-      </div>
-    </div>
-
-    <!-- Item 4 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="d-flex align-items-center gap-3">
-        <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-7.png?v=1727923043" width="40">
-        <div>
-          <h6 class="mb-1">180 Days Return</h6>
-          <small class="text-muted">Easy return policy</small>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-</section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>company</h4>
-          <ul>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">our services</a></li>
-            <li><a href="#">privacy policy</a></li>
-            <li><a href="#">affiliate program</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>get help</h4>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">shipping</a></li>
-            <li><a href="#">returns</a></li>
-            <li><a href="#">order status</a></li>
-            <li><a href="#">payment options</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>online shop</h4>
-          <ul>
-            <li><a href="#">watch</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Item 1 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-flex align-items-center gap-3">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-4.png?v=1727923043" width="40">
+            <div>
+              <h6 class="mb-1">Free delivery</h6>
+              <small class="text-muted">For all orders above $45</small>
+            </div>
           </div>
         </div>
+
+        <!-- Item 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-flex align-items-center gap-3">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-5.png?v=1727923043" width="40">
+            <div>
+              <h6 class="mb-1">Secure payments</h6>
+              <small class="text-muted">Confidence on all devices</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-flex align-items-center gap-3">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-6.png?v=1727923044" width="40">
+            <div>
+              <h6 class="mb-1">Top-notch support</h6>
+              <small class="text-muted">sayhello@flacio.com</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="d-flex align-items-center gap-3">
+            <img src="https://wpbingo-flacio.myshopify.com/cdn/shop/files/policy-7.png?v=1727923043" width="40">
+            <div>
+              <h6 class="mb-1">180 Days Return</h6>
+              <small class="text-muted">Easy return policy</small>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
+  </section>
+
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row gy-3">
+
+        <div class="col-md-3 col-sm-6">
+          <!-- Collapsible Toggle for Mobile -->
+          <h6 class="footer-title d-md-none" data-bs-toggle="collapse" href="#companyLinks" role="button"
+            aria-expanded="false" aria-controls="companyLinks">
+            COMPANY ▼
+          </h6>
+
+          <!-- Always visible on large screens, collapsed on mobile -->
+          <div class="collapse d-md-block" id="companyLinks">
+            <h6 class="footer-title d-none d-md-block">COMPANY</h6>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Corporate Orders</a></li>
+              <li><a href="#">Refer a Friend</a></li>
+              <li><a href="#">Our Guarantee</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div class="col-md-3 col-sm-6">
+          <!-- Collapsible Toggle for Mobile -->
+          <h6 class="footer-title d-md-none" data-bs-toggle="collapse" href="#supportLinks" role="button"
+            aria-expanded="false" aria-controls="supportLinks">
+            SUPPORT ▼
+          </h6>
+
+          <!-- Always visible on large screens, collapsed on mobile -->
+          <div class="collapse d-md-block" id="supportLinks">
+            <h6 class="footer-title d-none d-md-block">COMPANY</h6>
+            <ul class="footer-links">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Faqs</a></li>
+              <li><a href="#">Track Your orders</a></li>
+              <li><a href="#">Contact Supoorts</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Plant Questions -->
+        <div class="col-md-3 col-sm-6">
+          <!-- Collapsible Toggle for Mobile -->
+          <h6 class="footer-title d-md-none" data-bs-toggle="collapse" href="#plantsLinks" role="button"
+            aria-expanded="false" aria-controls="plantsLinks">
+            Plants ▼
+          </h6>
+
+          <!-- Always visible on large screens, collapsed on mobile -->
+          <div class="collapse d-md-block" id="plantsLinks">
+            <h6 class="footer-title d-none d-md-block">Plants</h6>
+            <ul class="footer-links">
+              <li><a href="#">Plant care tips</a></li>
+              <li><a href="#">Plant life blogs</a></li>
+              <li><a href="#">Vera plant care</a></li>
+              <li><a href="#">Meet plant Mom</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-3 col-sm-6">
+          <h6 class="footer-title">STAY IN THE LOOP</h6>
+          <p class="footer-text">
+            Stay in the loop with special offers, plant-parenting tips, and more.
+          </p>
+
+          <div class="newsletter">
+            <input type="email" placeholder="Email address..." />
+            <button aria-label="Subscribe">
+              <i class="bi bi-envelope"></i>
+            </button>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-x"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Payment Icons -->
+      <div class="payment-icons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="">
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div class="footer-copy">
+          © 2025 Flacio Store Kalpesh Prajatpati
+        </div>
+
+        <ul class="footer-bottom-links d-flex flex-wrap justify-content-center gap-3">
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Copyright & Trademark</a></li>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
   </footer>
+
+
+
+
 
 
 
@@ -918,7 +991,7 @@
     });
   </script>
 
-  </script>
+
 </body>
 
 </html>
